@@ -1,0 +1,122 @@
+/*=====GLOBAL=====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+}
+/*=====END=====*/
+
+/*=====MAIN=====*/
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Img/fundo-preto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*=====END=====*/
+
+.cont {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/*=====LOGIN=====*/
+.log{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    color:#222;
+}
+
+.ou{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+}
+
+/*=====OPACIDADE=====*/
+form{
+    opacity: 0.9;
+    transition: 0.3seg ease-in-out;
+}
+
+form:hover{
+    opacity: 1.0;
+}
+/*=====END=====*/
+
+
+/*=====footer=====*/
+.footer{
+    background-image: linear-gradient(-85deg, #348AED, #483DE0, #A436F0);
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+footer div div .a{
+    border-bottom: 2px solid rgb(192, 192, 192);
+    padding-bottom: 8 8 8 8;
+}
+
+footer .icon{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+footer .icon:hover{
+    transform: translateY(-10px);
+}
+
+.footer2{
+    border-bottom: 2px solid rgb(192, 192, 192);
+    padding-bottom: 8 8 8 8;
+}
+/*=====end footer=====*/
+
+/*=====Animação brilho=====*/
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+
+footer div img{
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+footer .img{
+    --cor-neon: #ffffff;
+}
+.b:hover{
+    animation: neon 0.7s alternate infinite ease-out;
+    --cor-neon: #67bef5;
+}
+/*=====FIM DA ANIMAÇÃO=====*/
+
+/* Mobile */
+@media only screen and (max-width: 680px) {
+    .cont {
+        width: 75%;
+        border-radius: 10px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 681px) {
+    .cont {
+        width: 60%;
+        border-radius: 10px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+
+}

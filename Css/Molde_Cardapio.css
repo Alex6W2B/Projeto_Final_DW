@@ -1,0 +1,132 @@
+/*=====PRATO DO DIA=====*/
+h5 {
+    font-size: 25px;
+}
+
+.princ {
+    border-radius: 10px;
+    border: 1px solid #e9e9e9;
+    margin: 1rem 0 4rem 0;
+}
+
+.princ h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+}
+
+section .esq {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin: 0 2rem 0 2rem;
+}
+
+section .dir {
+    width: 70%;
+    margin: 0 2rem 0 0;
+}
+
+.princ section {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    height: 100%;
+    align-items: center;
+}
+
+.initpageimg {
+    height: 12rem;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.categoria{
+    width: 60%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 30px;
+    color: #fff;
+    background-image: linear-gradient(-85deg, #348aedb9, #483de0ad, #a236f0ab);
+}
+/*--------ACOMPANHAMENTO---------*/
+.acomp {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+}
+
+.acomp section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    align-items: center;
+}
+
+section .cima {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+section .baixo {
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+
+.baixo .categoria {
+    width: 100%;
+}
+/*=====END=====*/
+
+/* Mobile */
+@media only screen and (max-width: 780px) {
+    section .esq {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    section .dir {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    .princ section {
+        width: 100%;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acomp section {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    section h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 681px) {
+    
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+
+}

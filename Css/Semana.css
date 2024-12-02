@@ -1,0 +1,16 @@
+div .day {
+    margin: 2rem 0;
+}
+
+.day img {
+    height: 20rem;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+}
+
+.day img:hover {
+    transform: scale(1.06);
+}

@@ -1,0 +1,81 @@
+/*=====GLOBAL=====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+}
+/*=====END=====*/
+
+/*=====MAIN=====*/
+main {
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    justify-content: center;
+}
+/*=====END=====*/
+
+/*=====header=====*/
+header{
+    background-image: linear-gradient(-45deg, #348AED, #483DE0, #A436F0);
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    height: 8rem;
+}
+
+
+/*=====END=====*/
+
+/*=====footer=====*/
+footer{
+    margin-top: 2rem;
+    background-image: linear-gradient(-85deg, #348AED, #483DE0, #A436F0);
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+footer div div .a{
+    border-bottom: 2px solid rgb(192, 192, 192);
+    padding-bottom: 8 8 8 8;
+}
+
+footer .icon{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+footer .icon:hover{
+    transform: translateY(-10px);
+}
+
+.footer2{
+    border-bottom: 2px solid rgb(192, 192, 192);
+    padding-bottom: 8 8 8 8;
+}
+/*=====end footer=====*/
+
+/*=====Animação brilho=====*/
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 30px var(--cor-neon));
+    }
+}
+header div .img{
+    animation: neon 3s alternate infinite ease-in-out;
+}
+
+footer .img{
+    --cor-neon: #ffffff;
+}
+.b:hover{
+    animation: neon 0.7s alternate infinite ease-out;
+    --cor-neon: #67bef5;
+}
+/*=====FIM DA ANIMAÇÃO=====*/
