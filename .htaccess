@@ -1,0 +1,4 @@
+<Directory "/var/www/html">
+    Require all granted
+    AllowOverride All
+</Directory>
